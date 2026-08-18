@@ -1,2 +1,21 @@
 # Runtime logs（app 起動時に追記。ディレクトリは logs/.gitkeep で維持）
-logs/*.log
+logs/*
+!logs/.gitkeep
+
+# Python
+__pycache__/
+*.py[cod]
+.venv/
+venv/
+
+# env / secrets
+.env
+.env.*
+!.env.example
+
+# PyInstaller
+build/
+dist/
+
+# Office lock
+~$*
